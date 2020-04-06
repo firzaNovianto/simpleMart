@@ -69,103 +69,14 @@
   ],
   "chart": [
     {
+      "id_product": "2",
       "username": "virza",
-      "name": "sepatu murah",
+      "name": "baju sultan",
       "desc": "bagus",
-      "price": 10000,
-      "src": "https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2020/01/1.-Compass-untuk-%40darahkubiru-Pot-meets-Pop.jpg",
-      "qty": "5",
+      "price": 29990,
+      "src": "https://cf.shopee.co.id/file/8c382080c514c4cf877d4c1a6662945b",
+      "qty": 50,
       "id": 1
-    },
-    {
-      "username": "virza",
-      "name": "baju sultan",
-      "desc": "bagus",
-      "price": 29990,
-      "src": "https://cf.shopee.co.id/file/8c382080c514c4cf877d4c1a6662945b",
-      "qty": "10",
-      "id": 2
-    },
-    {
-      "username": "rochafi",
-      "name": "sendal gunung",
-      "desc": "sendal naik",
-      "price": 30000,
-      "src": "https://s.blanja.com/picspace/802/182050/1000.865_c1d23cd9e8a144b7ab0ad263db889bd8.jpg",
-      "qty": "3",
-      "id": 3
-    },
-    {
-      "username": "rochafi",
-      "name": "sepatu murah",
-      "desc": "bagus",
-      "price": 10000,
-      "src": "https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2020/01/1.-Compass-untuk-%40darahkubiru-Pot-meets-Pop.jpg",
-      "qty": "5",
-      "id": 4
-    },
-    {
-      "username": "rochafi",
-      "name": "baju sultan",
-      "desc": "bagus",
-      "price": 29990,
-      "src": "https://cf.shopee.co.id/file/8c382080c514c4cf877d4c1a6662945b",
-      "qty": "",
-      "id": 5
-    },
-    {
-      "username": "rochafi",
-      "name": "celana bahan",
-      "desc": "adem",
-      "price": 15000,
-      "src": "https://id-test-11.slatic.net/p/b305034fc9a450ce2649a0631aa21753.jpg_340x340q80.jpg_.webp",
-      "qty": "10",
-      "id": 6
-    },
-    {
-      "username": "rochafi",
-      "name": "sepatu murah",
-      "desc": "bagus",
-      "price": 10000,
-      "src": "https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2020/01/1.-Compass-untuk-%40darahkubiru-Pot-meets-Pop.jpg",
-      "qty": "6",
-      "id": 7
-    },
-    {
-      "username": "virza",
-      "name": "sendal gunung",
-      "desc": "sendal naik",
-      "price": 30000,
-      "src": "https://s.blanja.com/picspace/802/182050/1000.865_c1d23cd9e8a144b7ab0ad263db889bd8.jpg",
-      "qty": "9",
-      "id": 8
-    },
-    {
-      "username": "virza",
-      "name": "celana bahan",
-      "desc": "adem",
-      "price": 15000,
-      "src": "https://id-test-11.slatic.net/p/b305034fc9a450ce2649a0631aa21753.jpg_340x340q80.jpg_.webp",
-      "qty": "20",
-      "id": 9
-    },
-    {
-      "username": "virza",
-      "name": "baju murah",
-      "desc": "magic",
-      "price": 50000,
-      "src": "https://cf.shopee.co.id/file/49c18d3433ef46f2d93ee7c17a3fe328",
-      "qty": "5",
-      "id": 10
-    },
-    {
-      "username": "virza",
-      "name": "celana bahan",
-      "desc": "adem",
-      "price": 15000,
-      "src": "https://id-test-11.slatic.net/p/b305034fc9a450ce2649a0631aa21753.jpg_340x340q80.jpg_.webp",
-      "qty": "9",
-      "id": 11
     }
   ]
 }

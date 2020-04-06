@@ -3,7 +3,7 @@ import axios from 'axios'
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux'
 // Import action creator
-import {onLoginUser} from '../actions/index'
+// import {onLoginUser} from '../actions/index'
 // Akan me-redirect ke alamat tertentu
 import {Redirect} from 'react-router-dom'
 import ProductItems from './ProductItems'
@@ -30,10 +30,11 @@ class Home extends Component {
                 return (
                     data.username == this.props.uname
                 )
+                
             })
 
             this.setState({ chartUser: hasil })
-        //    console.log(this.state.chartUser)
+           console.log(this.state.chartUser)
                 })    
                 
 }
@@ -57,7 +58,7 @@ class Home extends Component {
             })
 
             this.setState({ chartUser: hasil })
-        //    console.log(this.state.chartUser)
+           console.log(this.state.chartUser)
                 })    
     }
 
@@ -65,7 +66,7 @@ class Home extends Component {
         return this.state.products.map((product) => {
 
             // Untuk memisahkan setiap 3 digit angka dengan karakter titik.
-            product.price = product.price.toLocaleString('in')
+            // product.price = product.price.toLocaleString('in')
 
             return (
                 <ProductItems product={product}
