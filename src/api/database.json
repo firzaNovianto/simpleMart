@@ -75,8 +75,18 @@
       "desc": "bagus",
       "price": 29990,
       "src": "https://cf.shopee.co.id/file/8c382080c514c4cf877d4c1a6662945b",
-      "qty": 50,
+      "qty": "25",
       "id": 1
+    },
+    {
+      "id_product": "3",
+      "username": "virza",
+      "name": "sepatu murah",
+      "desc": "bagus",
+      "price": 10000,
+      "src": "https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2020/01/1.-Compass-untuk-%40darahkubiru-Pot-meets-Pop.jpg",
+      "qty": 20,
+      "id": 2
     }
   ]
 }

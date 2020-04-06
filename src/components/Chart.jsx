@@ -10,7 +10,8 @@ class Chart extends Component{
     state = {
         chart: [],
         editChart:[],
-        modal: false
+        modal: false,
+        togle: false
     }
 
     // runnning hanya sekali, setelah proses render yang pertama
@@ -97,11 +98,91 @@ class Chart extends Component{
     
         }
 
-        funCancel = () =>{
+        funCancel = () => {
             this.setState({modal:false})
     
         }
 
+        // checkOut = () => {
+        //     return (
+        //         <div>Ini CheckOut</div>
+        //     )
+            
+           
+           
+            // }
+            
+            
+            renderCheckout = () => {
+                let totalChart = 0
+                this.state.chart.map((product) =>{
+                    let totalPro = product.qty * product.price
+                    totalChart += totalPro
+                })
+                return (
+                    <div className="container-fluid">
+                    {/* List Product */}
+                    <div ClassName="row">
+                    <div className="col-12">
+                    
+                    
+                    <div className="card-body">
+                    
+                    
+                <h1 className="display-4">Total</h1>
+                
+                
+                <table className="table table-hover text-center mb-5">
+                    <thead>
+                        <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">NAME</th>
+                        <th scope="col">PRICE</th>
+                        <th scope="col">QUANTITY</th>
+                        <th scope="col">TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.renderChart()}
+                    </tbody>
+                    <tr>
+                        <th colspan ="4">TOTAL</th>  
+                        <th>{totalChart.toLocaleString('in')}</th>                      
+                        </tr>
+                
+                </table>   
+                </div>
+                </div>
+                </div>
+                </div>
+                
+                
+                
+                
+                )
+            
+        }
+
+            renderChart = () => {
+               let totalChart = 0
+                return this.state.chart.map((product) =>{
+                    let totalPro = product.qty * product.price
+                    totalChart += totalPro
+                    return(
+                        <tr>    
+                        <td>{product.id}</td>
+                        <td>{product.name}</td>
+                        <td>{product.qty}</td>
+                        <td>Rp. {product.price.toLocaleString('in')}</td>
+                        <td>Rp. {totalPro.toLocaleString('in')}</td>
+                        </tr>
+                    )
+                })
+
+               
+
+
+            }
     //Render Map
     renderList = () => {
         return this.state.chart.map((product) => {
@@ -114,9 +195,9 @@ class Chart extends Component{
                         <td>{product.name}</td>
                         <td>{product.desc}</td>
                         <td>Rp. {product.price.toLocaleString('in')}</td>
-                        <td className="w-25"><img className="list" src={product.src} alt="" height="100"
-                             width="100"/></td>
                         <td>{product.qty}</td>
+                        <td className="w-25"><img className="list" src={product.src} alt="" height="100"
+                             width="100"/></td>                       
                         <td>
                             <button type="button" onClick={() => {this.editChart(product.id)}} className="btn btn-outline-primary btn-block"> Edit </button>
                             <button type="button" onClick={() => {this.deleteChart(product.id)} } className="btn btn-outline-secondary btn-block"> Delete </button>
@@ -126,45 +207,6 @@ class Chart extends Component{
         })   
     }
 
-    onPayButton = () => {
-        alert('Transfer Via Rek BCA: ')
-    }
-
-    totalCart = () => {
-        var totalPriceChart = 0
-        let renderPrice = this.state.chart.map((resProduct) => {
-            let totalPrice = resProduct.price * resProduct.qty
-            totalPriceChart += totalPrice
-
-            return(
-                <div className="row">
-                        <div class="card-body">
-                            <h5 class="card-title">{resProduct.name}</h5>
-                            <p class="card-text">Rp. {resProduct.price.toLocaleString('in')} x {resProduct.qty} = Rp. {totalPrice.toLocaleString('in')}</p>
-                    </div>
-                 </div>
-            
-            )
-        }) 
-        
-        return(
-        <div className="row">
-            <div className="col-sm-6">
-                {renderPrice}
-            </div>
-            <div class="col-sm-6">
-                <div class="card">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Total Belanjaan Anda:</h5>
-                    <h4 className="text-danger">Rp. {totalPriceChart.toLocaleString('in')}</h4>
-                    <button type="button" className="btn btn-outline-primary btn-block w-50 mt-5 mx-auto" onClick={this.onPayButton}>Check Out</button>
-                </div>
-                </div>
-            </div>
-        </div>
-        )
-
-    }
 
     render() {
         if(!this.props.uname == ""){
@@ -172,20 +214,20 @@ class Chart extends Component{
                 <div className="container-fluid">
                 {/* List Product */}
                 <div ClassName="row">
-                <div className="col-6">
-                <div className="card">
-                <h1 className="text-center display-4">Cart</h1>
+                <div className="col-12">
+                
+                <h1 className="display-4">Cart</h1>
                 <div className="card-body">
                 
                 <table className="table table-hover text-center mb-5">
                     <thead>
                         <tr>
-                        <th scope="col">NO</th>
+                        <th scope="col">ID</th>
                         <th scope="col">NAME</th>
                         <th scope="col">DESC</th>
                         <th scope="col">PRICE</th>
-                        <th scope="col">PICTURE</th>
                         <th scope="col">QUANTITY</th>
+                        <th scope="col">PICTURE</th>
                         <th scope="col">ACTION</th>
                         </tr>
                     </thead>
@@ -193,27 +235,26 @@ class Chart extends Component{
                         {this.renderList()}
                     </tbody>
                 </table>
-                </div>
-                </div>
-                </div>
-                {/* Total Belanja */}
-                <div className="col-6">
                 
-                        <div className="card">
-
-                            <div className=" border-bottom border-secondary card-title">
-                                <h1 className="text-center">Total Cart</h1>
-                            </div>
-                            <div className="card-body">
-
-                            <div className="card-body">
-                                {this.totalCart()}
-                            </div>
-                            </div>
-                            </div>
-                        
+                    
                     
                 </div>
+                
+                </div>
+                <div className="container-fluid">
+                <div className="row">
+                <div className="col-4"></div>
+                <div className="col-3 mx-auto">
+                    <button onClick={this.checkOut} className="btn btn-primary">Checkout
+                    </button></div>
+                <div className="col-2"></div>
+                
+                
+                </div>
+                </div>
+                </div>
+                <div>
+                    {this.renderCheckout()}
                 </div>
                 <Modal isOpen={this.state.modal}>
                 <ModalHeader>Edit Qty</ModalHeader>
@@ -227,6 +268,7 @@ class Chart extends Component{
                 </ModalFooter>
             </Modal>
               
+
             </div>
             
         )
