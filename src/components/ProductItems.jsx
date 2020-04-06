@@ -10,15 +10,21 @@ import Swal from 'sweetalert2'
 
 class ProductItems extends Component {
 
+    state = {
+        redirect:false
+    }
+
     addToChart = () => {
         
         
         if(this.props.uname == ""){
-            Swal.fire(
-                '',
-                'Silakan login terlebih dahulu',
-                ''
-              )
+            // Swal.fire(
+            //     '',
+            //     'Silakan login terlebih dahulu',
+            //     ''
+            //   )
+            //   return <Redirect to="/login"/>
+            this.setState({redirect : true})
         }else if(!this.qty.value == ""){
 
 
@@ -98,23 +104,29 @@ class ProductItems extends Component {
     }
 
    render() {
-      return (
-         <div key={this.props.product.id} className="card col-lg-5 col-xl-3 mx-auto mx-xl-4 my-3">
-            <img className="card-img-top" src={this.props.product.src} alt=""/>
-            <div className="card-body">
-               <div  style={{height: 50}}>
-                     <h5 className="card-title">{this.props.product.name}</h5>
-               </div>
-               <p className="card-text">{this.props.product.desc}</p>
-               <p className="card-text">Rp. {this.props.product.price}</p>
-               <input ref={( input ) => { this.qty = input }} className="form-control" type="text" placeholder="Jumlah Qty"/>
-               <Link to={`/detailproduct/${this.props.product.id}`}>
-                     <button className="btn btn-secondary btn-block my-2">Detail</button>
-               </Link>
-               <button onClick={() => {this.addToChart(this.props.product.id)}} className="btn btn-primary btn-block">Add to Cart</button>
-            </div>
-         </div>
-      )
+            const {redirect} = this.state
+            if(redirect){
+                return <Redirect to="/login"/>
+            }else{
+                return (
+                    <div key={this.props.product.id} className="card col-lg-5 col-xl-3 mx-auto mx-xl-4 my-3">
+                       <img className="card-img-top" src={this.props.product.src} alt=""/>
+                       <div className="card-body">
+                          <div  style={{height: 50}}>
+                                <h5 className="card-title">{this.props.product.name}</h5>
+                          </div>
+                          <p className="card-text">{this.props.product.desc}</p>
+                          <p className="card-text">Rp. {this.props.product.price}</p>
+                          <input ref={( input ) => { this.qty = input }} className="form-control" type="text" placeholder="Jumlah Qty"/>
+                          <Link to={`/detailproduct/${this.props.product.id}`}>
+                                <button className="btn btn-secondary btn-block my-2">Detail</button>
+                          </Link>
+                          <button onClick={() => {this.addToChart(this.props.product.id)}} className="btn btn-primary btn-block">Add to Cart</button>
+                       </div>
+                    </div>
+                 )
+            }
+     
    }
 }
 
