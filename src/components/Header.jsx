@@ -52,12 +52,12 @@ class Header extends Component {
                         Hello, {this.props.uname}
                     </DropdownToggle>
                     <DropdownMenu right>
-                        <DropdownItem tag={Link} to="/manageproduct">
-                            Manage Product
+                        <DropdownItem tag={Link} to="/ManageStory">
+                            Manage Story
                         </DropdownItem>
 
-                        <DropdownItem tag={Link} to="/chart">
-                            chart
+                        <DropdownItem tag={Link} to="/CreateStory">
+                            CreateStory
                         </DropdownItem>
 
                         <DropdownItem divider />
@@ -74,15 +74,18 @@ class Header extends Component {
 
     render() {
             return (
-                <div>
-                    <Navbar color="light" light expand="md">
-                        <NavbarBrand tag={Link} to="/">reactstrap</NavbarBrand>
+                <div >
+                    
+                    <Navbar color="light" light expand="md" className="section">
+                        <NavbarBrand tag={Link} to="/"><h4>Diary</h4></NavbarBrand>
+                        <NavbarBrand tag={Link} to="/Albums"><h4>Albums</h4></NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             
                             {this.renderNav()}
 
                         </Collapse>
+                        
                     </Navbar>
                 </div>
             )

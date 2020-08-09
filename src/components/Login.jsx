@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 import {onLoginUser} from '../actions/index'
 // Akan me-redirect ke alamat tertentu
 import {Redirect} from 'react-router-dom'
+import './main.css'
 
 class Login extends Component {
 
@@ -38,17 +39,17 @@ class Login extends Component {
 
         if(!this.props.uname){ // Jika belum login
             return (
-                <div>
-                    <div className="container-fluid">
+                <div className="tinggi background-login">
+                    <div className="container-fluid ">
                     <div className="row">
                         <div className=" col-5 mx-auto mt-5 card">
                             <div className="card-body">
-                                <div className="border-bottom border-secondary card-title text-center">
+                                <div className="text-center">
                                     <h1>Login</h1>
                                 </div>
     
                                 <form className='form-group'>
-                                    <div className="card-title ">
+                                    <div className="card-title">
                                         <h4>Username</h4>
                                     </div>
                                     <input ref={(input) => {this.username = input}} type='text' className='form-control' required/>
@@ -59,7 +60,7 @@ class Login extends Component {
                                     <input ref={(input) => {this.password = input}} type='password' className='form-control'/>
                                 </form>
     
-                                <button className="btn btn-success btn-block" onClick={this.onButtonClick} >Login</button>
+                                <button className="btn btn-outline-light" onClick={this.onButtonClick} >Login</button>
                             </div>
                         </div>
                         </div>

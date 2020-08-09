@@ -9,6 +9,9 @@ import App from './components/App'
 // import hasil combineReducer (belum siap pakai)
 import reducers from './reducers/index'
 
+
+
+
 let store_result = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(

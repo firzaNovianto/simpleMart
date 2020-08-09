@@ -1,132 +1,97 @@
 {
   "users": [
     {
-      "username": "rochafi",
-      "email": "rochafi@gmail.com",
-      "pswd": "satuduatiga",
-      "id": 1
-    },
-    {
-      "username": "alvinn",
-      "email": "alvinn@gmail.com",
-      "pswd": "satuduatiga",
-      "id": 2
-    },
-    {
-      "username": "rochafi26",
-      "email": "rochafi26@gmail.com",
-      "pswd": "satuduatiga",
-      "id": 3
-    },
-    {
       "username": "virza",
       "email": "virza@gmail.com",
       "pswd": "satuduatiga",
       "id": 4
     }
   ],
-  "products": [
+  "cerita": [
     {
-      "id": "1",
-      "name": "baju murah",
-      "desc": "magic",
-      "price": 50000,
-      "category": "baju",
-      "src": "https://cf.shopee.co.id/file/49c18d3433ef46f2d93ee7c17a3fe328"
-    },
-    {
-      "id": "2",
-      "name": "baju sultan",
-      "desc": "bagus",
-      "price": 29990,
-      "category": "baju",
-      "src": "https://cf.shopee.co.id/file/8c382080c514c4cf877d4c1a6662945b"
-    },
-    {
-      "id": "3",
-      "name": "sepatu murah",
-      "desc": "bagus",
-      "price": 10000,
-      "category": "sepatu",
-      "src": "https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2020/01/1.-Compass-untuk-%40darahkubiru-Pot-meets-Pop.jpg"
-    },
-    {
-      "id": "4",
-      "name": "celana bahan",
-      "desc": "adem",
-      "price": 15000,
-      "category": "sepatu",
-      "src": "https://id-test-11.slatic.net/p/b305034fc9a450ce2649a0631aa21753.jpg_340x340q80.jpg_.webp"
-    },
-    {
-      "id": "5",
-      "name": "sendal gunung",
-      "desc": "sendal naik",
-      "price": 30000,
-      "category": "celana",
-      "src": "https://s.blanja.com/picspace/802/182050/1000.865_c1d23cd9e8a144b7ab0ad263db889bd8.jpg"
-    }
-  ],
-  "chart": [
-    {
-      "id_product": "2",
+      "id": 1,
       "username": "virza",
-      "name": "baju sultan",
-      "desc": "bagus",
-      "price": 29990,
-      "src": "https://cf.shopee.co.id/file/8c382080c514c4cf877d4c1a6662945b",
-      "qty": "25",
-      "id": 1
+      "judul": "lorem",
+      "sinopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus gravida sapien vitae pulvinar. Aenean vel sem a odio dapibus faucibus. Vivamus auctor gravida erat, sed tincidunt augue congue quis. Nam tempus libero augue",
+      "konten": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus gravida sapien vitae pulvinar. Aenean vel sem a odio dapibus faucibus. Vivamus auctor gravida erat, sed tincidunt augue congue qu "
     },
     {
-      "id_product": "3",
+      "id": 2,
+      "username": "widya",
+      "judul": "lorem",
+      "sinopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus gravida sapien vitae pulvinar. Aenean vel sem a odio dapibus faucibus. Vivamus auctor gravida erat, sed tincidunt augue congue quis. Nam tempus libero augue",
+      "konten": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus gravida sapien vitae pulvinar. Aenean vel sem a odio dapibus faucibus. Vivamus auctor gravida erat, sed tincidunt augue congue quis. Nam tempus libero augue, eget elementum odio venenatis nec. Integer non iaculis lectus, a laoreet ex. Etiam vel sodales ligula. Proin a vestibulum dui. Suspendisse cursus mi at lacus luctus vulputate. Morbi auctor, neque ut sagittis semper, velit odio mollis tortor, quis elementum ligula urna quis erat. Integer rhoncus accumsan augue a ultrices. Nullam metus dolor, condimentum quis efficitur in, posuere et quam. Sed sit amet massa blandit, commodo odio nec, tincidunt elit. Suspendisse neque lectus, interdum a sapien in, dictum bibendum nulla. Nunc ultrices efficitur neque, eu interdum ipsum fermentum ac. Etiam malesuada lacus urna, quis dictum risus rhoncus et. Fusce posuere rutrum libero, nec pretium dolor luctus id. "
+    },
+    {
+      "id": 3,
       "username": "virza",
-      "name": "sepatu murah",
-      "desc": "bagus",
-      "price": 10000,
-      "src": "https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2020/01/1.-Compass-untuk-%40darahkubiru-Pot-meets-Pop.jpg",
-      "qty": 20,
-      "id": 2
+      "judul": "ipsum",
+      "sinopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus gravida sapien vitae pulvinar. Aenean vel sem a odio dapibus faucibus. Vivamus auctor gravida erat, sed tincidunt augue congue quis. Nam tempus libero augue",
+      "konten": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus gravida sapien vitae pulvinar. Aenean vel sem a odio dapibus faucibus. Vivamus auctor gravida erat, sed tincidunt augue congue quis. Nam tempus libero augue, eget elementum odio venenatis nec. Integer non iaculis lectus, a laoreet ex. Etiam vel sodales ligula. Proin a vestibulum dui. Suspendisse cursus mi at lacus luctus vulputate. Morbi auctor, neque ut sagittis semper, velit odio mollis tortor, quis elementum ligula urna quis erat. Integer rhoncus accumsan augue a ultrices. Nullam metus dolor, condimentum quis efficitur in, posuere et quam. Sed sit amet massa blandit, commodo odio nec, tincidunt elit. Suspendisse neque lectus, interdum a sapien in, dictum bibendum nulla. Nunc ultrices efficitur neque, eu interdum ipsum fermentum ac. Etiam malesuada lacus urna, quis dictum risus rhoncus et. Fusce posuere rutrum libero, nec pretium dolor luctus id. "
     },
     {
-      "id_product": "2",
-      "username": "rochafi",
-      "name": "baju sultan",
-      "desc": "bagus",
-      "price": 29990,
-      "src": "https://cf.shopee.co.id/file/8c382080c514c4cf877d4c1a6662945b",
-      "qty": 10,
-      "id": 3
+      "id": 4,
+      "username": "widya",
+      "judul": "ipsum",
+      "sinopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus gravida sapien vitae pulvinar. Aenean vel sem a odio dapibus faucibus. Vivamus auctor gravida erat, sed tincidunt augue congue quis. Nam tempus libero augue",
+      "konten": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus gravida sapien vitae pulvinar. Aenean vel sem a odio dapibus faucibus. Vivamus auctor gravida erat, sed tincidunt augue congue quis. Nam tempus libero augue, eget elementum odio venenatis nec. Integer non iaculis lectus, a laoreet ex. Etiam vel sodales ligula. Proin a vestibulum dui. Suspendisse cursus mi at lacus luctus vulputate. Morbi auctor, neque ut sagittis semper, velit odio mollis tortor, quis elementum ligula urna quis erat. Integer rhoncus accumsan augue a ultrices. Nullam metus dolor, condimentum quis efficitur in, posuere et quam. Sed sit amet massa blandit, commodo odio nec, tincidunt elit. Suspendisse neque lectus, interdum a sapien in, dictum bibendum nulla. Nunc ultrices efficitur neque, eu interdum ipsum fermentum ac. Etiam malesuada lacus urna, quis dictum risus rhoncus et. Fusce posuere rutrum libero, nec pretium dolor luctus id. "
     },
     {
-      "id_product": "3",
-      "username": "rochafi",
-      "name": "sepatu murah",
-      "desc": "bagus",
-      "price": 10000,
-      "src": "https://ecs7.tokopedia.net/blog-tokopedia-com/uploads/2020/01/1.-Compass-untuk-%40darahkubiru-Pot-meets-Pop.jpg",
-      "qty": 5,
-      "id": 4
-    },
-    {
-      "id_product": "4",
-      "username": "rochafi",
-      "name": "celana bahan",
-      "desc": "adem",
-      "price": 15000,
-      "src": "https://id-test-11.slatic.net/p/b305034fc9a450ce2649a0631aa21753.jpg_340x340q80.jpg_.webp",
-      "qty": 20,
+      "judul": "222",
+      "konten": "hjgjhg",
       "id": 5
     },
     {
-      "id_product": "5",
-      "username": "rochafi",
-      "name": "sendal gunung",
-      "desc": "sendal naik",
-      "price": 30000,
-      "src": "https://s.blanja.com/picspace/802/182050/1000.865_c1d23cd9e8a144b7ab0ad263db889bd8.jpg",
-      "qty": 50,
+      "judul": "dsfcsdcc",
+      "konten": "sadcsdcsdcsdc",
       "id": 6
+    },
+    {
+      "judul": "xcv xc vxcvdz",
+      "konten": "d zx zx zx zx zx zx zx z z sd sd c sd",
+      "id": 7
+    }
+  ],
+  "albums": [
+    {
+      "id": "1",
+      "name": "you_n_me",
+      "photo": "https://i.ibb.co/59mqXfr/IMG-8916.jpg"
+    },
+    {
+      "id": "2",
+      "name": "you_n_me2",
+      "photo": "https://i.ibb.co/q9kGrLw/IMG20180908092145.jpg"
+    },
+    {
+      "id": "3",
+      "name": "you_n_me3",
+      "photo": "https://i.ibb.co/h9ZgC8j/IMG20180421074817.jpg"
+    },
+    {
+      "id": "4",
+      "name": "you_n_me4",
+      "photo": "https://i.ibb.co/t2JrCZK/IMG20180908092946.jpg"
+    },
+    {
+      "id": "5",
+      "name": "you_n_me5",
+      "photo": "https://i.ibb.co/sPzCwmT/17-11-11-10-11-19-429-photo.jpg"
+    },
+    {
+      "id": "6",
+      "name": "you_n_me6",
+      "photo": "https://i.ibb.co/Ld8q3Qs/17-11-24-13-33-12-953-photo.jpg"
+    },
+    {
+      "id": "7",
+      "name": "you_n_me",
+      "photo": "https://i.ibb.co/Z8CP2jb/18-01-07-19-24-31-329-photo.jpg"
+    },
+    {
+      "id": "8",
+      "name": "you_n_me2",
+      "photo": "https://i.ibb.co/R4r3VmD/IMG20171111214103.jpg"
     }
   ]
 }
